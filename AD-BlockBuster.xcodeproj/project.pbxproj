@@ -33,7 +33,7 @@
 		B398452A2D9AF4BD00962026 /* Exceptions for "AD-BlockBuster" folder in "AD-BlockBuster" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				Info.plist,
+				Resource/Info.plist,
 			);
 			target = B39845012D9AF4BC00962026 /* AD-BlockBuster */;
 		};
@@ -51,11 +51,6 @@
 		B398451B2D9AF4BD00962026 /* AD-BlockBusterTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "AD-BlockBusterTests";
-			sourceTree = "<group>";
-		};
-		B39845252D9AF4BD00962026 /* AD-BlockBusterUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "AD-BlockBusterUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -90,7 +85,6 @@
 			children = (
 				B39845042D9AF4BC00962026 /* AD-BlockBuster */,
 				B398451B2D9AF4BD00962026 /* AD-BlockBusterTests */,
-				B39845252D9AF4BD00962026 /* AD-BlockBusterUITests */,
 				B39845032D9AF4BC00962026 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -165,9 +159,6 @@
 			);
 			dependencies = (
 				B39845242D9AF4BD00962026 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				B39845252D9AF4BD00962026 /* AD-BlockBusterUITests */,
 			);
 			name = "AD-BlockBusterUITests";
 			packageProductDependencies = (
@@ -291,17 +282,17 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VZC79KP79S;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "AD-BlockBuster/Info.plist";
+				INFOPLIST_FILE = "AD-BlockBuster/Resource/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "xyz.jiyong.AD-BlockBuster";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -319,17 +310,17 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VZC79KP79S;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "AD-BlockBuster/Info.plist";
+				INFOPLIST_FILE = "AD-BlockBuster/Resource/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "xyz.jiyong.AD-BlockBuster";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
