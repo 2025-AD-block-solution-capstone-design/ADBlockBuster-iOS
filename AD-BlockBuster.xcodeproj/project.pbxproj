@@ -10,6 +10,7 @@
 		B38CF9082D9C45DE00A2A999 /* CSSBlockEngine.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = B38CF8F02D9C45DE00A2A999 /* CSSBlockEngine.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		B38CF91A2D9C45EE00A2A999 /* NetworkPrivacyEngine.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = B38CF9112D9C45EE00A2A999 /* NetworkPrivacyEngine.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		B38CF93B2D9C45FD00A2A999 /* CSSPrivacyEngine.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = B38CF9232D9C45FD00A2A999 /* CSSPrivacyEngine.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B38CF95F2D9D166B00A2A999 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = B38CF95E2D9D166B00A2A999 /* SnapKit */; };
 		B398464B2D9C25E900962026 /* NetworkBlockEngine.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = B39846422D9C25E900962026 /* NetworkBlockEngine.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
@@ -205,6 +206,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B38CF95F2D9D166B00A2A999 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,6 +352,7 @@
 			);
 			name = "AD-BlockBuster";
 			packageProductDependencies = (
+				B38CF95E2D9D166B00A2A999 /* SnapKit */,
 			);
 			productName = "AD-BlockBuster";
 			productReference = B39845022D9AF4BC00962026 /* AD-BlockBuster.app */;
@@ -464,6 +467,9 @@
 			);
 			mainGroup = B39844F92D9AF4BC00962026;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				B38CF95D2D9D166B00A2A999 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = B39845032D9AF4BC00962026 /* Products */;
 			projectDirPath = "";
@@ -1193,6 +1199,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B38CF95D2D9D166B00A2A999 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B38CF95E2D9D166B00A2A999 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B38CF95D2D9D166B00A2A999 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B39844FA2D9AF4BC00962026 /* Project object */;
 }
