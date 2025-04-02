@@ -27,6 +27,10 @@ extension Coordinator {
     func popAndFinish(
         animated: Bool = true
     ) {
+        guard navigationController.viewControllers.count > 1 else {
+            didFinish()
+            return
+        }
         navigationController.popViewController(animated: animated)
         didFinish()
     }
