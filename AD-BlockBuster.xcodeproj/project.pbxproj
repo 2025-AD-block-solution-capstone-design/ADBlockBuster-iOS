@@ -6,7 +6,36 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		B38CF9082D9C45DE00A2A999 /* CSSBlockEngine.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = B38CF8F02D9C45DE00A2A999 /* CSSBlockEngine.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B38CF91A2D9C45EE00A2A999 /* NetworkPrivacyEngine.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = B38CF9112D9C45EE00A2A999 /* NetworkPrivacyEngine.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B38CF93B2D9C45FD00A2A999 /* CSSPrivacyEngine.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = B38CF9232D9C45FD00A2A999 /* CSSPrivacyEngine.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B38CF95F2D9D166B00A2A999 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = B38CF95E2D9D166B00A2A999 /* SnapKit */; };
+		B398464B2D9C25E900962026 /* NetworkBlockEngine.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = B39846422D9C25E900962026 /* NetworkBlockEngine.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
+		B38CF9062D9C45DE00A2A999 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B39844FA2D9AF4BC00962026 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B38CF8EF2D9C45DE00A2A999;
+			remoteInfo = CSSBlockEngine;
+		};
+		B38CF9182D9C45EE00A2A999 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B39844FA2D9AF4BC00962026 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B38CF9102D9C45EE00A2A999;
+			remoteInfo = NetworkPrivacyEngine;
+		};
+		B38CF9392D9C45FD00A2A999 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B39844FA2D9AF4BC00962026 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B38CF9222D9C45FD00A2A999;
+			remoteInfo = CSSPrivacyEngine;
+		};
 		B39845192D9AF4BD00962026 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B39844FA2D9AF4BC00962026 /* Project object */;
@@ -14,22 +43,63 @@
 			remoteGlobalIDString = B39845012D9AF4BC00962026;
 			remoteInfo = "AD-BlockBuster";
 		};
-		B39845232D9AF4BD00962026 /* PBXContainerItemProxy */ = {
+		B39846492D9C25E900962026 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B39844FA2D9AF4BC00962026 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B39845012D9AF4BC00962026;
-			remoteInfo = "AD-BlockBuster";
+			remoteGlobalIDString = B39846412D9C25E900962026;
+			remoteInfo = NetworkBlockEngine;
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		B398463D2D9C23D000962026 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B38CF9082D9C45DE00A2A999 /* CSSBlockEngine.appex in Embed Foundation Extensions */,
+				B398464B2D9C25E900962026 /* NetworkBlockEngine.appex in Embed Foundation Extensions */,
+				B38CF91A2D9C45EE00A2A999 /* NetworkPrivacyEngine.appex in Embed Foundation Extensions */,
+				B38CF93B2D9C45FD00A2A999 /* CSSPrivacyEngine.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		B38CF8F02D9C45DE00A2A999 /* CSSBlockEngine.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CSSBlockEngine.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		B38CF9112D9C45EE00A2A999 /* NetworkPrivacyEngine.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NetworkPrivacyEngine.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		B38CF9232D9C45FD00A2A999 /* CSSPrivacyEngine.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CSSPrivacyEngine.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		B39845022D9AF4BC00962026 /* AD-BlockBuster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AD-BlockBuster.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B39845182D9AF4BD00962026 /* AD-BlockBusterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AD-BlockBusterTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B39845222D9AF4BD00962026 /* AD-BlockBusterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AD-BlockBusterUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B39846422D9C25E900962026 /* NetworkBlockEngine.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NetworkBlockEngine.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		B38CF90C2D9C45DE00A2A999 /* Exceptions for "CSSBlockEngine" folder in "CSSBlockEngine" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = B38CF8EF2D9C45DE00A2A999 /* CSSBlockEngine */;
+		};
+		B38CF91E2D9C45EE00A2A999 /* Exceptions for "NetworkPrivacyEngine" folder in "NetworkPrivacyEngine" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = B38CF9102D9C45EE00A2A999 /* NetworkPrivacyEngine */;
+		};
+		B38CF93F2D9C45FD00A2A999 /* Exceptions for "CSSPrivacyEngine" folder in "CSSPrivacyEngine" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = B38CF9222D9C45FD00A2A999 /* CSSPrivacyEngine */;
+		};
 		B398452A2D9AF4BD00962026 /* Exceptions for "AD-BlockBuster" folder in "AD-BlockBuster" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
@@ -37,9 +107,48 @@
 			);
 			target = B39845012D9AF4BC00962026 /* AD-BlockBuster */;
 		};
+		B398464F2D9C25E900962026 /* Exceptions for "NetworkBlockEngine" folder in "NetworkBlockEngine" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = B39846412D9C25E900962026 /* NetworkBlockEngine */;
+		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		B38CF8F12D9C45DE00A2A999 /* CSSBlockEngine */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				B38CF90C2D9C45DE00A2A999 /* Exceptions for "CSSBlockEngine" folder in "CSSBlockEngine" target */,
+			);
+			explicitFolders = (
+				Resources/_locales,
+				Resources/images,
+			);
+			path = CSSBlockEngine;
+			sourceTree = "<group>";
+		};
+		B38CF9122D9C45EE00A2A999 /* NetworkPrivacyEngine */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				B38CF91E2D9C45EE00A2A999 /* Exceptions for "NetworkPrivacyEngine" folder in "NetworkPrivacyEngine" target */,
+			);
+			path = NetworkPrivacyEngine;
+			sourceTree = "<group>";
+		};
+		B38CF9242D9C45FD00A2A999 /* CSSPrivacyEngine */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				B38CF93F2D9C45FD00A2A999 /* Exceptions for "CSSPrivacyEngine" folder in "CSSPrivacyEngine" target */,
+			);
+			explicitFolders = (
+				Resources/_locales,
+				Resources/images,
+			);
+			path = CSSPrivacyEngine;
+			sourceTree = "<group>";
+		};
 		B39845042D9AF4BC00962026 /* AD-BlockBuster */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
@@ -53,13 +162,43 @@
 			path = "AD-BlockBusterTests";
 			sourceTree = "<group>";
 		};
+		B39846432D9C25E900962026 /* NetworkBlockEngine */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				B398464F2D9C25E900962026 /* Exceptions for "NetworkBlockEngine" folder in "NetworkBlockEngine" target */,
+			);
+			path = NetworkBlockEngine;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B38CF8ED2D9C45DE00A2A999 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B38CF90E2D9C45EE00A2A999 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B38CF9202D9C45FD00A2A999 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B39844FF2D9AF4BC00962026 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B38CF95F2D9D166B00A2A999 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,7 +209,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B398451F2D9AF4BD00962026 /* Frameworks */ = {
+		B398463F2D9C25E900962026 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -85,6 +224,10 @@
 			children = (
 				B39845042D9AF4BC00962026 /* AD-BlockBuster */,
 				B398451B2D9AF4BD00962026 /* AD-BlockBusterTests */,
+				B39846432D9C25E900962026 /* NetworkBlockEngine */,
+				B38CF8F12D9C45DE00A2A999 /* CSSBlockEngine */,
+				B38CF9122D9C45EE00A2A999 /* NetworkPrivacyEngine */,
+				B38CF9242D9C45FD00A2A999 /* CSSPrivacyEngine */,
 				B39845032D9AF4BC00962026 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -94,7 +237,10 @@
 			children = (
 				B39845022D9AF4BC00962026 /* AD-BlockBuster.app */,
 				B39845182D9AF4BD00962026 /* AD-BlockBusterTests.xctest */,
-				B39845222D9AF4BD00962026 /* AD-BlockBusterUITests.xctest */,
+				B39846422D9C25E900962026 /* NetworkBlockEngine.appex */,
+				B38CF8F02D9C45DE00A2A999 /* CSSBlockEngine.appex */,
+				B38CF9112D9C45EE00A2A999 /* NetworkPrivacyEngine.appex */,
+				B38CF9232D9C45FD00A2A999 /* CSSPrivacyEngine.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -102,6 +248,72 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		B38CF8EF2D9C45DE00A2A999 /* CSSBlockEngine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B38CF9092D9C45DE00A2A999 /* Build configuration list for PBXNativeTarget "CSSBlockEngine" */;
+			buildPhases = (
+				B38CF8EC2D9C45DE00A2A999 /* Sources */,
+				B38CF8ED2D9C45DE00A2A999 /* Frameworks */,
+				B38CF8EE2D9C45DE00A2A999 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				B38CF8F12D9C45DE00A2A999 /* CSSBlockEngine */,
+			);
+			name = CSSBlockEngine;
+			packageProductDependencies = (
+			);
+			productName = CSSBlockEngine;
+			productReference = B38CF8F02D9C45DE00A2A999 /* CSSBlockEngine.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		B38CF9102D9C45EE00A2A999 /* NetworkPrivacyEngine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B38CF91B2D9C45EE00A2A999 /* Build configuration list for PBXNativeTarget "NetworkPrivacyEngine" */;
+			buildPhases = (
+				B38CF90D2D9C45EE00A2A999 /* Sources */,
+				B38CF90E2D9C45EE00A2A999 /* Frameworks */,
+				B38CF90F2D9C45EE00A2A999 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				B38CF9122D9C45EE00A2A999 /* NetworkPrivacyEngine */,
+			);
+			name = NetworkPrivacyEngine;
+			packageProductDependencies = (
+			);
+			productName = NetworkPrivacyEngine;
+			productReference = B38CF9112D9C45EE00A2A999 /* NetworkPrivacyEngine.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		B38CF9222D9C45FD00A2A999 /* CSSPrivacyEngine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B38CF93C2D9C45FD00A2A999 /* Build configuration list for PBXNativeTarget "CSSPrivacyEngine" */;
+			buildPhases = (
+				B38CF91F2D9C45FD00A2A999 /* Sources */,
+				B38CF9202D9C45FD00A2A999 /* Frameworks */,
+				B38CF9212D9C45FD00A2A999 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				B38CF9242D9C45FD00A2A999 /* CSSPrivacyEngine */,
+			);
+			name = CSSPrivacyEngine;
+			packageProductDependencies = (
+			);
+			productName = CSSPrivacyEngine;
+			productReference = B38CF9232D9C45FD00A2A999 /* CSSPrivacyEngine.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		B39845012D9AF4BC00962026 /* AD-BlockBuster */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B398452B2D9AF4BD00962026 /* Build configuration list for PBXNativeTarget "AD-BlockBuster" */;
@@ -109,16 +321,22 @@
 				B39844FE2D9AF4BC00962026 /* Sources */,
 				B39844FF2D9AF4BC00962026 /* Frameworks */,
 				B39845002D9AF4BC00962026 /* Resources */,
+				B398463D2D9C23D000962026 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				B398464A2D9C25E900962026 /* PBXTargetDependency */,
+				B38CF9072D9C45DE00A2A999 /* PBXTargetDependency */,
+				B38CF9192D9C45EE00A2A999 /* PBXTargetDependency */,
+				B38CF93A2D9C45FD00A2A999 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				B39845042D9AF4BC00962026 /* AD-BlockBuster */,
 			);
 			name = "AD-BlockBuster";
 			packageProductDependencies = (
+				B38CF95E2D9D166B00A2A999 /* SnapKit */,
 			);
 			productName = "AD-BlockBuster";
 			productReference = B39845022D9AF4BC00962026 /* AD-BlockBuster.app */;
@@ -147,25 +365,27 @@
 			productReference = B39845182D9AF4BD00962026 /* AD-BlockBusterTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		B39845212D9AF4BD00962026 /* AD-BlockBusterUITests */ = {
+		B39846412D9C25E900962026 /* NetworkBlockEngine */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B39845332D9AF4BD00962026 /* Build configuration list for PBXNativeTarget "AD-BlockBusterUITests" */;
+			buildConfigurationList = B398464C2D9C25E900962026 /* Build configuration list for PBXNativeTarget "NetworkBlockEngine" */;
 			buildPhases = (
-				B398451E2D9AF4BD00962026 /* Sources */,
-				B398451F2D9AF4BD00962026 /* Frameworks */,
-				B39845202D9AF4BD00962026 /* Resources */,
+				B398463E2D9C25E900962026 /* Sources */,
+				B398463F2D9C25E900962026 /* Frameworks */,
+				B39846402D9C25E900962026 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B39845242D9AF4BD00962026 /* PBXTargetDependency */,
 			);
-			name = "AD-BlockBusterUITests";
+			fileSystemSynchronizedGroups = (
+				B39846432D9C25E900962026 /* NetworkBlockEngine */,
+			);
+			name = NetworkBlockEngine;
 			packageProductDependencies = (
 			);
-			productName = "AD-BlockBusterUITests";
-			productReference = B39845222D9AF4BD00962026 /* AD-BlockBusterUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
+			productName = NetworkBlockEngine;
+			productReference = B39846422D9C25E900962026 /* NetworkBlockEngine.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -177,6 +397,15 @@
 				LastSwiftUpdateCheck = 1600;
 				LastUpgradeCheck = 1600;
 				TargetAttributes = {
+					B38CF8EF2D9C45DE00A2A999 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					B38CF9102D9C45EE00A2A999 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					B38CF9222D9C45FD00A2A999 = {
+						CreatedOnToolsVersion = 16.0;
+					};
 					B39845012D9AF4BC00962026 = {
 						CreatedOnToolsVersion = 16.0;
 					};
@@ -184,9 +413,8 @@
 						CreatedOnToolsVersion = 16.0;
 						TestTargetID = B39845012D9AF4BC00962026;
 					};
-					B39845212D9AF4BD00962026 = {
+					B39846412D9C25E900962026 = {
 						CreatedOnToolsVersion = 16.0;
-						TestTargetID = B39845012D9AF4BC00962026;
 					};
 				};
 			};
@@ -199,6 +427,9 @@
 			);
 			mainGroup = B39844F92D9AF4BC00962026;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				B38CF95D2D9D166B00A2A999 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = B39845032D9AF4BC00962026 /* Products */;
 			projectDirPath = "";
@@ -206,12 +437,36 @@
 			targets = (
 				B39845012D9AF4BC00962026 /* AD-BlockBuster */,
 				B39845172D9AF4BD00962026 /* AD-BlockBusterTests */,
-				B39845212D9AF4BD00962026 /* AD-BlockBusterUITests */,
+				B39846412D9C25E900962026 /* NetworkBlockEngine */,
+				B38CF8EF2D9C45DE00A2A999 /* CSSBlockEngine */,
+				B38CF9102D9C45EE00A2A999 /* NetworkPrivacyEngine */,
+				B38CF9222D9C45FD00A2A999 /* CSSPrivacyEngine */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		B38CF8EE2D9C45DE00A2A999 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B38CF90F2D9C45EE00A2A999 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B38CF9212D9C45FD00A2A999 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B39845002D9AF4BC00962026 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -226,7 +481,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B39845202D9AF4BD00962026 /* Resources */ = {
+		B39846402D9C25E900962026 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -236,6 +491,27 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		B38CF8EC2D9C45DE00A2A999 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B38CF90D2D9C45EE00A2A999 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B38CF91F2D9C45FD00A2A999 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B39844FE2D9AF4BC00962026 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -250,7 +526,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B398451E2D9AF4BD00962026 /* Sources */ = {
+		B398463E2D9C25E900962026 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -260,27 +536,232 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		B38CF9072D9C45DE00A2A999 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B38CF8EF2D9C45DE00A2A999 /* CSSBlockEngine */;
+			targetProxy = B38CF9062D9C45DE00A2A999 /* PBXContainerItemProxy */;
+		};
+		B38CF9192D9C45EE00A2A999 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B38CF9102D9C45EE00A2A999 /* NetworkPrivacyEngine */;
+			targetProxy = B38CF9182D9C45EE00A2A999 /* PBXContainerItemProxy */;
+		};
+		B38CF93A2D9C45FD00A2A999 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B38CF9222D9C45FD00A2A999 /* CSSPrivacyEngine */;
+			targetProxy = B38CF9392D9C45FD00A2A999 /* PBXContainerItemProxy */;
+		};
 		B398451A2D9AF4BD00962026 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = B39845012D9AF4BC00962026 /* AD-BlockBuster */;
 			targetProxy = B39845192D9AF4BD00962026 /* PBXContainerItemProxy */;
 		};
-		B39845242D9AF4BD00962026 /* PBXTargetDependency */ = {
+		B398464A2D9C25E900962026 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B39845012D9AF4BC00962026 /* AD-BlockBuster */;
-			targetProxy = B39845232D9AF4BD00962026 /* PBXContainerItemProxy */;
+			target = B39846412D9C25E900962026 /* NetworkBlockEngine */;
+			targetProxy = B39846492D9C25E900962026 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		B38CF90A2D9C45DE00A2A999 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VZC79KP79S;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CSSBlockEngine/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CSSBlockEngine;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "xyz.jiyong.AD-BlockBuster.CSSBlockEngine";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B38CF90B2D9C45DE00A2A999 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VZC79KP79S;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CSSBlockEngine/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CSSBlockEngine;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "xyz.jiyong.AD-BlockBuster.CSSBlockEngine";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B38CF91C2D9C45EE00A2A999 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VZC79KP79S;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NetworkPrivacyEngine/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = NetworkPrivacyEngine;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "xyz.jiyong.AD-BlockBuster.NetworkPrivacyEngine";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B38CF91D2D9C45EE00A2A999 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VZC79KP79S;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NetworkPrivacyEngine/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = NetworkPrivacyEngine;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "xyz.jiyong.AD-BlockBuster.NetworkPrivacyEngine";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B38CF93D2D9C45FD00A2A999 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VZC79KP79S;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CSSPrivacyEngine/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CSSPrivacyEngine;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "xyz.jiyong.AD-BlockBuster.CSSPrivacyEngine";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B38CF93E2D9C45FD00A2A999 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VZC79KP79S;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CSSPrivacyEngine/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CSSPrivacyEngine;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "xyz.jiyong.AD-BlockBuster.CSSPrivacyEngine";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		B398452C2D9AF4BD00962026 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = VZC79KP79S;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = VZC79KP79S;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "AD-BlockBuster/Resource/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -295,6 +776,8 @@
 				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "xyz.jiyong.AD-BlockBuster";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "adblockbuster-1";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -306,9 +789,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = VZC79KP79S;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = VZC79KP79S;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "AD-BlockBuster/Resource/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -323,6 +810,8 @@
 				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "xyz.jiyong.AD-BlockBuster";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "adblockbuster-1";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -456,7 +945,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VZC79KP79S;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "xyz.jiyong.AD-BlockBusterTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -475,7 +964,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VZC79KP79S;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "xyz.jiyong.AD-BlockBusterTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -486,43 +975,94 @@
 			};
 			name = Release;
 		};
-		B39845342D9AF4BD00962026 /* Debug */ = {
+		B398464D2D9C25E900962026 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VZC79KP79S;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NetworkBlockEngine/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = NetworkBlockEngine;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "xyz.jiyong.AD-BlockBusterUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "xyz.jiyong.AD-BlockBuster.NetworkBlockEngine";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "AD-BlockBuster";
 			};
 			name = Debug;
 		};
-		B39845352D9AF4BD00962026 /* Release */ = {
+		B398464E2D9C25E900962026 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VZC79KP79S;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NetworkBlockEngine/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = NetworkBlockEngine;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "xyz.jiyong.AD-BlockBusterUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "xyz.jiyong.AD-BlockBuster.NetworkBlockEngine";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "AD-BlockBuster";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B38CF9092D9C45DE00A2A999 /* Build configuration list for PBXNativeTarget "CSSBlockEngine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B38CF90A2D9C45DE00A2A999 /* Debug */,
+				B38CF90B2D9C45DE00A2A999 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B38CF91B2D9C45EE00A2A999 /* Build configuration list for PBXNativeTarget "NetworkPrivacyEngine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B38CF91C2D9C45EE00A2A999 /* Debug */,
+				B38CF91D2D9C45EE00A2A999 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B38CF93C2D9C45FD00A2A999 /* Build configuration list for PBXNativeTarget "CSSPrivacyEngine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B38CF93D2D9C45FD00A2A999 /* Debug */,
+				B38CF93E2D9C45FD00A2A999 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B39844FD2D9AF4BC00962026 /* Build configuration list for PBXProject "AD-BlockBuster" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -550,16 +1090,35 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B39845332D9AF4BD00962026 /* Build configuration list for PBXNativeTarget "AD-BlockBusterUITests" */ = {
+		B398464C2D9C25E900962026 /* Build configuration list for PBXNativeTarget "NetworkBlockEngine" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B39845342D9AF4BD00962026 /* Debug */,
-				B39845352D9AF4BD00962026 /* Release */,
+				B398464D2D9C25E900962026 /* Debug */,
+				B398464E2D9C25E900962026 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B38CF95D2D9D166B00A2A999 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B38CF95E2D9D166B00A2A999 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B38CF95D2D9D166B00A2A999 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B39844FA2D9AF4BC00962026 /* Project object */;
 }
