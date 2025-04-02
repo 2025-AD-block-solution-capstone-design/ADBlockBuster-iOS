@@ -43,13 +43,6 @@
 			remoteGlobalIDString = B39845012D9AF4BC00962026;
 			remoteInfo = "AD-BlockBuster";
 		};
-		B39845232D9AF4BD00962026 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B39844FA2D9AF4BC00962026 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B39845012D9AF4BC00962026;
-			remoteInfo = "AD-BlockBuster";
-		};
 		B39846492D9C25E900962026 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B39844FA2D9AF4BC00962026 /* Project object */;
@@ -82,7 +75,6 @@
 		B38CF9232D9C45FD00A2A999 /* CSSPrivacyEngine.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CSSPrivacyEngine.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		B39845022D9AF4BC00962026 /* AD-BlockBuster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AD-BlockBuster.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B39845182D9AF4BD00962026 /* AD-BlockBusterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AD-BlockBusterTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B39845222D9AF4BD00962026 /* AD-BlockBusterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AD-BlockBusterUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B39846422D9C25E900962026 /* NetworkBlockEngine.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NetworkBlockEngine.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -217,13 +209,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B398451F2D9AF4BD00962026 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		B398463F2D9C25E900962026 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -252,7 +237,6 @@
 			children = (
 				B39845022D9AF4BC00962026 /* AD-BlockBuster.app */,
 				B39845182D9AF4BD00962026 /* AD-BlockBusterTests.xctest */,
-				B39845222D9AF4BD00962026 /* AD-BlockBusterUITests.xctest */,
 				B39846422D9C25E900962026 /* NetworkBlockEngine.appex */,
 				B38CF8F02D9C45DE00A2A999 /* CSSBlockEngine.appex */,
 				B38CF9112D9C45EE00A2A999 /* NetworkPrivacyEngine.appex */,
@@ -381,26 +365,6 @@
 			productReference = B39845182D9AF4BD00962026 /* AD-BlockBusterTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		B39845212D9AF4BD00962026 /* AD-BlockBusterUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B39845332D9AF4BD00962026 /* Build configuration list for PBXNativeTarget "AD-BlockBusterUITests" */;
-			buildPhases = (
-				B398451E2D9AF4BD00962026 /* Sources */,
-				B398451F2D9AF4BD00962026 /* Frameworks */,
-				B39845202D9AF4BD00962026 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B39845242D9AF4BD00962026 /* PBXTargetDependency */,
-			);
-			name = "AD-BlockBusterUITests";
-			packageProductDependencies = (
-			);
-			productName = "AD-BlockBusterUITests";
-			productReference = B39845222D9AF4BD00962026 /* AD-BlockBusterUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 		B39846412D9C25E900962026 /* NetworkBlockEngine */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B398464C2D9C25E900962026 /* Build configuration list for PBXNativeTarget "NetworkBlockEngine" */;
@@ -449,10 +413,6 @@
 						CreatedOnToolsVersion = 16.0;
 						TestTargetID = B39845012D9AF4BC00962026;
 					};
-					B39845212D9AF4BD00962026 = {
-						CreatedOnToolsVersion = 16.0;
-						TestTargetID = B39845012D9AF4BC00962026;
-					};
 					B39846412D9C25E900962026 = {
 						CreatedOnToolsVersion = 16.0;
 					};
@@ -477,7 +437,6 @@
 			targets = (
 				B39845012D9AF4BC00962026 /* AD-BlockBuster */,
 				B39845172D9AF4BD00962026 /* AD-BlockBusterTests */,
-				B39845212D9AF4BD00962026 /* AD-BlockBusterUITests */,
 				B39846412D9C25E900962026 /* NetworkBlockEngine */,
 				B38CF8EF2D9C45DE00A2A999 /* CSSBlockEngine */,
 				B38CF9102D9C45EE00A2A999 /* NetworkPrivacyEngine */,
@@ -516,13 +475,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		B39845162D9AF4BD00962026 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B39845202D9AF4BD00962026 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -574,13 +526,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B398451E2D9AF4BD00962026 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		B398463E2D9C25E900962026 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -611,11 +556,6 @@
 			target = B39845012D9AF4BC00962026 /* AD-BlockBuster */;
 			targetProxy = B39845192D9AF4BD00962026 /* PBXContainerItemProxy */;
 		};
-		B39845242D9AF4BD00962026 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B39845012D9AF4BC00962026 /* AD-BlockBuster */;
-			targetProxy = B39845232D9AF4BD00962026 /* PBXContainerItemProxy */;
-		};
 		B398464A2D9C25E900962026 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = B39846412D9C25E900962026 /* NetworkBlockEngine */;
@@ -636,7 +576,7 @@
 				INFOPLIST_FILE = CSSBlockEngine/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = CSSBlockEngine;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -668,7 +608,7 @@
 				INFOPLIST_FILE = CSSBlockEngine/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = CSSBlockEngine;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -701,6 +641,7 @@
 				INFOPLIST_FILE = NetworkPrivacyEngine/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = NetworkPrivacyEngine;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -729,6 +670,7 @@
 				INFOPLIST_FILE = NetworkPrivacyEngine/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = NetworkPrivacyEngine;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -756,7 +698,7 @@
 				INFOPLIST_FILE = CSSPrivacyEngine/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = CSSPrivacyEngine;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -788,7 +730,7 @@
 				INFOPLIST_FILE = CSSPrivacyEngine/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = CSSPrivacyEngine;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1003,7 +945,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VZC79KP79S;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "xyz.jiyong.AD-BlockBusterTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1022,7 +964,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VZC79KP79S;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "xyz.jiyong.AD-BlockBusterTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1030,40 +972,6 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AD-BlockBuster.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AD-BlockBuster";
-			};
-			name = Release;
-		};
-		B39845342D9AF4BD00962026 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = VZC79KP79S;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "xyz.jiyong.AD-BlockBusterUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "AD-BlockBuster";
-			};
-			name = Debug;
-		};
-		B39845352D9AF4BD00962026 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = VZC79KP79S;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "xyz.jiyong.AD-BlockBusterUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "AD-BlockBuster";
 			};
 			name = Release;
 		};
@@ -1080,6 +988,7 @@
 				INFOPLIST_FILE = NetworkBlockEngine/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = NetworkBlockEngine;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1108,6 +1017,7 @@
 				INFOPLIST_FILE = NetworkBlockEngine/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = NetworkBlockEngine;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1176,15 +1086,6 @@
 			buildConfigurations = (
 				B39845312D9AF4BD00962026 /* Debug */,
 				B39845322D9AF4BD00962026 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B39845332D9AF4BD00962026 /* Build configuration list for PBXNativeTarget "AD-BlockBusterUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B39845342D9AF4BD00962026 /* Debug */,
-				B39845352D9AF4BD00962026 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
