@@ -68,7 +68,7 @@ private extension ADOnboardingMainViewModel {
             ),
             OnboardingPage(
                 title: "예비",
-                description: "일단킵",
+                description: "예비용 화면입니다",
                 buttonTitle: "홈으로 가기"
             )
         ]
