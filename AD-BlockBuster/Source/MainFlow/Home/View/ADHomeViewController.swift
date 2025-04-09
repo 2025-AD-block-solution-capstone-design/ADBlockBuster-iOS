@@ -8,6 +8,9 @@
 import UIKit
 
 final class ADHomeViewController: BaseViewController<ADHomeView> {
+    // MARK: - Properties
+    weak var coordinator: ADHomeCoordinator?
+
     // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
