@@ -24,5 +24,6 @@ final class ADOnboardingViewController: BaseViewController<ADOnboardingView> {
 
 extension ADOnboardingViewController: ADOnboardingViewDelegate {
     func ADOnboardingViewDidTapNextButton(_ view: ADOnboardingView) {
+        coordinator?.didTapNextButton()
     }
 }

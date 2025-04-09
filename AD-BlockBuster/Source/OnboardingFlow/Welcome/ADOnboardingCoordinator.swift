@@ -30,3 +30,20 @@ final class ADOnboardingCoordinator: Coordinator, FinishNotifying {
         navigationController.pushViewController(onboardingViewController, animated: true)
     }
 }
+
+// MARK: - Extended Methods
+extension ADOnboardingCoordinator {
+    func didTapNextButton() {
+        let onboardingMainCoordinator = ADOnboardingMainCoordinator(
+            parentCoordinator: self,
+            navigationController: navigationController
+        )
+        
+        onboardingMainCoordinator.onFinish = { [weak self] in
+            self?.popAndFinish()
+        }
+        
+        addChildCoordinator(onboardingMainCoordinator)
+        onboardingMainCoordinator.start()
+    }
+}
