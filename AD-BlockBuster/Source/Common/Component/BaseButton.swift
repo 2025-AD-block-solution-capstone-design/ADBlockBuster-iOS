@@ -22,7 +22,7 @@ final class BaseButton: UIButton {
     init(
         title: String = "",
         radius: CGFloat,
-        customBackgroundColor: UIColor = .primary,
+        customBackgroundColor: UIColor = .main,
         customForegroundColor: UIColor = .white,
         font: UIFont = UIFont.pretendard(
             size: LayoutContants.buttonFontSize,
