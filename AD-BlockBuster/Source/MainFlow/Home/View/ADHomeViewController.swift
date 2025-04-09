@@ -11,6 +11,5 @@ final class ADHomeViewController: BaseViewController<ADHomeView> {
     // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupNavigationBar()
     }
 }
