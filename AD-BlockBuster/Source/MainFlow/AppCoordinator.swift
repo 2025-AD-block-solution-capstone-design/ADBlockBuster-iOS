@@ -31,12 +31,7 @@ final class AppCoordinator: Coordinator {
 // MARK: - Private Methods
 private extension AppCoordinator {
     func checkOnboardingCompletion() -> Bool {
-        if UserDefaults.standard.bool(forKey: Constants.onboardingIdentifier) {
-            return true
-        } else {
-            UserDefaults.standard.set(true, forKey: Constants.onboardingIdentifier)
-            return false
-        }
+        return UserDefaults.standard.bool(forKey: Constants.onboardingIdentifier)
     }
     
     func showMainFlow() {
@@ -59,10 +54,15 @@ private extension AppCoordinator {
             guard let self, let onboardingCoordinator else { return }
             self.removeChildCoordinator(onboardingCoordinator)
             self.showMainFlow()
+            self.onboardingFinished()
         }
         
         addChildCoordinator(onboardingCoordinator)
         onboardingCoordinator.start()
+    }
+    
+    func onboardingFinished() {
+        UserDefaults.standard.set(true, forKey: Constants.onboardingIdentifier)
     }
     
     enum Constants {
