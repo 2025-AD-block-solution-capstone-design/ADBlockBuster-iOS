@@ -8,7 +8,7 @@
 import UIKit
 
 final class ADOnboardingMainCoordinator: Coordinator, FinishNotifying {
-    var parentCoordinator: Coordinator?
+    weak var parentCoordinator: Coordinator?
     var childCoordinators = [Coordinator]()
     var navigationController: UINavigationController
     var onFinish: (() -> Void)?

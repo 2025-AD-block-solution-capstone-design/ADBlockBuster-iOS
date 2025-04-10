@@ -9,7 +9,7 @@ import UIKit
 
 final class ADHomeCoordinator: Coordinator {
     // MARK: - Properties
-    var parentCoordinator: Coordinator?
+    weak var parentCoordinator: Coordinator?
     var childCoordinators = [Coordinator]()
     var navigationController: UINavigationController
     
