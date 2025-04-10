@@ -45,6 +45,7 @@ final class ADOnboardingMainViewModel: BaseViewModel {
 // MARK: - Private Methods
 private extension ADOnboardingMainViewModel {
     func updateState(by currentPage: Int) {
+        guard currentPage >= 0 && currentPage < Constants.pages.count else { return }
         state.currentPage = currentPage
         state.title = Constants.pages[currentPage].title
         state.description = Constants.pages[currentPage].description
