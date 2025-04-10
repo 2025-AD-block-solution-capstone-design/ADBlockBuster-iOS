@@ -22,6 +22,10 @@ extension Coordinator {
     func didFinish() {
         finishAllChildCoordinators()
         parentCoordinator?.removeChildCoordinator(self)
+        
+        if let self = self as? FinishNotifying {
+            self.onFinish?()
+        }
     }
     
     func popAndFinish(
