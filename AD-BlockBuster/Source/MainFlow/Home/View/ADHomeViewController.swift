@@ -24,7 +24,7 @@ final class ADHomeViewController: BaseViewController<ADHomeView> {
 private extension ADHomeViewController {
     @objc
     func rightBarButtonTapped() {
-        
+        // TODO: 추후 구현 예정
     }
     
     func setupNavigationBar() {

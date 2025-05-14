@@ -21,6 +21,6 @@ enum ADEngineType {
 }
 
 struct ADEngineViewState {
-    let ADEngineType: ADEngineType
-    var ADEngineStatus: ADEngineStatus
+    let engineType: ADEngineType
+    var engineStatus: ADEngineStatus
 }
