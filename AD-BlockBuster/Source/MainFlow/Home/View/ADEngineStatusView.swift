@@ -59,7 +59,7 @@ final class ADEngineStatusView: BaseView {
         super.updateConstraints()
         
         snp.updateConstraints {
-            $0.width.height.equalTo(sideLength)
+            $0.height.equalTo(sideLength)
         }
     }
     
@@ -90,10 +90,12 @@ final class ADEngineStatusView: BaseView {
                 .offset(LayoutContants.iconTopOffset)
             $0.leading.equalToSuperview()
                 .inset(LayoutContants.iconLeadingInset)
+            $0.width.height.equalTo(LayoutContants.iconSize)
         }
         
         descriptionLabel.snp.makeConstraints {
-            $0.top.equalTo(statusIcon)
+            $0.top.equalTo(titleLabel.snp.bottom)
+                .offset(LayoutContants.descriptionTopOffset)
             $0.leading.equalTo(statusIcon.snp.trailing)
                 .offset(LayoutContants.descriptionLeadaingOffset)
             $0.trailing.equalToSuperview()
@@ -128,13 +130,15 @@ private extension ADEngineStatusView {
     func applyStatus() {
         switch status {
         case .running:
-            statusIcon.image = UIImage(named: "icons/success")
+            statusIcon.image = UIImage(named: "icons/success")!
             backgroundColor = .success
         case .stopped:
-            statusIcon.image = UIImage(named: "icons/warning")
+            statusIcon.image = UIImage(named: "icons/warning")!
             backgroundColor = .failure
         case .undefined:
-            statusIcon.image = UIImage(named: "icons/lock")
+            statusIcon.image = UIImage(named: "icons/lock")!
+                .withRenderingMode(.alwaysTemplate)
+            statusIcon.tintColor = .black
             backgroundColor = .gray
         }
     }
@@ -147,8 +151,10 @@ private extension ADEngineStatusView {
         static let titleInset: CGFloat = 16
         static let titleFontSize: CGFloat = 20
         static let descriptionFontSize: CGFloat = 14
-        static let descriptionLeadaingOffset: CGFloat = 11
-        static let iconTopOffset: CGFloat = 12
-        static let iconLeadingInset: CGFloat = 11
+        static let descriptionLeadaingOffset: CGFloat = 10
+        static let descriptionTopOffset: CGFloat = 12
+        static let iconTopOffset: CGFloat = 17
+        static let iconLeadingInset: CGFloat = 16
+        static let iconSize: CGFloat = 14
     }
 }

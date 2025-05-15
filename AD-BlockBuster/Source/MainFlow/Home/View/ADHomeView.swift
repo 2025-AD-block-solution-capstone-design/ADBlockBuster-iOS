@@ -10,6 +10,7 @@ import SnapKit
 
 final class ADHomeView: BaseView {
     // MARK: - Properties
+    private let contentView = UIView()
     private let scrollView: UIScrollView = {
         let scrollView = UIScrollView()
         scrollView.alwaysBounceVertical = true
@@ -66,6 +67,7 @@ final class ADHomeView: BaseView {
         let totalSpacing = LayoutContants.stackViewSpacing * CGFloat(numberOfItemsInRow - 1)
         let itemWidth = (widthWithConstraint - totalSpacing) / CGFloat(numberOfItemsInRow)
         
+        scrollView.contentInset.bottom = LayoutContants.horizontalInset
         statusView.arrangedSubviews
             .compactMap { $0 as? UIStackView }
             .flatMap(\.arrangedSubviews)
@@ -76,7 +78,8 @@ final class ADHomeView: BaseView {
     // MARK: - Methods
     override func setupView() {
         addSubview(scrollView)
-        [titleLabel, descriptionLabel, statusView].forEach(scrollView.addSubview)
+        scrollView.addSubview(contentView)
+        [titleLabel, descriptionLabel, statusView].forEach(contentView.addSubview)
     }
     
     override func configure() {
@@ -96,17 +99,22 @@ final class ADHomeView: BaseView {
             $0.edges.equalToSuperview()
         }
         
+        contentView.snp.makeConstraints {
+            $0.edges.equalTo(scrollView.contentLayoutGuide)
+            $0.width.equalTo(scrollView.frameLayoutGuide)
+        }
+        
         titleLabel.snp.makeConstraints {
             $0.top.equalToSuperview()
                 .inset(LayoutContants.labelTopSpacing)
-            $0.leading.equalToSuperview()
+            $0.leading.trailing.equalToSuperview()
                 .inset(LayoutContants.horizontalInset)
         }
         
         descriptionLabel.snp.makeConstraints {
             $0.top.equalTo(titleLabel.snp.bottom)
                 .offset(LayoutContants.labelTopSpacing)
-            $0.leading.equalToSuperview()
+            $0.leading.trailing.equalToSuperview()
                 .inset(LayoutContants.horizontalInset)
         }
         
