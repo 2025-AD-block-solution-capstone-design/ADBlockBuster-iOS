@@ -8,5 +8,5 @@
 import Foundation
 
 protocol EasyListUpdateUseCase {
-    func excute() async throws -> Void
+    func execute() async throws -> Void
 }

@@ -19,7 +19,7 @@ struct DefaultEasyListUpdateUseCase: EasyListUpdateUseCase {
         self.storage = storage
     }
     
-    func excute() async throws {
+    func execute() async throws {
         let configs: [(RuleSetType, String, String)] = [
             (.easylist, Constants.easyListNetworkRuleFileName, Constants.easyListCosmeticRuleFileName),
             (.easyprivacy, Constants.easyPrivacyNetworkRuleFileName, Constants.easyPrivacyCosmeticRuleFileName)
