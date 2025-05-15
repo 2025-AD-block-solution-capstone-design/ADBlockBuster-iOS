@@ -14,6 +14,6 @@ struct CosmeticFilteringRule: Codable {
 
 extension CosmeticFilteringRule {
     static let regex = try! NSRegularExpression(
-        pattern: #"^(?:(.*?)##)?([^\s:]+)(?::style\((.+?)\))?$"#
+        pattern: #"^([^:]+)(?::style\((.+?)\))?$"#
     )
 }
