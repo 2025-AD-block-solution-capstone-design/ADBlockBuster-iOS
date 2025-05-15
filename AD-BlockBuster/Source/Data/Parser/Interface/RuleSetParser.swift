@@ -8,7 +8,7 @@
 import Foundation
 
 protocol RuleSetParser {
-    associatedtype rule
+    associatedtype Rule
     static var shared: Self { get }
-    func parse(from data: Data) throws -> [rule]
+    func parse(from data: Data) throws -> [Rule]
 }
