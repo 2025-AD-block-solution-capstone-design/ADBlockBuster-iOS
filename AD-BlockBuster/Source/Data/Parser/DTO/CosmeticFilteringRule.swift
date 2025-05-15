@@ -16,4 +16,13 @@ extension CosmeticFilteringRule {
     static let regex = try! NSRegularExpression(
         pattern: #"^([^:]+)(?::style\((.+?)\))?$"#
     )
+    func toEntity() -> ADBlockRule {
+        ADBlockRule(
+            type: .cosmetic,
+            selector: selector,
+            cosmeticAction: action,
+            trigger: nil,
+            networkAction: nil
+        )
+    }
 }

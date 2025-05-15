@@ -9,3 +9,15 @@ struct NetworkFilteringRule: Codable {
     var trigger: NetworkFilteringTrigger
     var action: NetworkFilteringAction
 }
+
+extension NetworkFilteringRule {
+    func toEntity() -> ADBlockRule {
+        ADBlockRule(
+            type: .network,
+            selector: nil,
+            cosmeticAction: nil,
+            trigger: trigger,
+            networkAction: action
+        )
+    }
+}
