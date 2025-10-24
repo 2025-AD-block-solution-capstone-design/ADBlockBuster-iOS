@@ -131,7 +131,7 @@ private extension ADEngineStatusView {
         switch status {
         case .running:
             statusIcon.image = UIImage(named: "icons/success")!
-            backgroundColor = .success
+            backgroundColor = UIColor(hex: "#4187F5")
         case .stopped:
             statusIcon.image = UIImage(named: "icons/warning")!
             backgroundColor = .failure
