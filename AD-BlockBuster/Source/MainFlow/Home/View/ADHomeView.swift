@@ -83,14 +83,15 @@ final class ADHomeView: BaseView {
     }
     
     override func configure() {
-        repeatElement((), count: 3).forEach { _ in
-            statusView.addArrangedSubview(createStatusViewStack())
-        }
+//        repeatElement((), count: 3).forEach { _ in
+//            statusView.addArrangedSubview(createStatusViewStack())
+//        }
+        statusView.addArrangedSubview(createStatusViewStack())
         
-        titleLabel.text = "임시로 채워넣을 문자열"
+        titleLabel.text = "AD-BlockBuster가 작동 중입니다."
         descriptionLabel.text = """
-        임시로 두줄 이상의 문자열을
-        아무렇게나 넣어봐요 !
+        원치 않는 광고와 추적기를 자동으로 차단하고 있어요. 
+        광고 없는 더 빠르고 깔끔한 웹 경험을 즐겨보세요.
         """
     }
     
@@ -131,11 +132,26 @@ final class ADHomeView: BaseView {
 // MARK: - Private Methods
 private extension ADHomeView {
     func createStatusViewStack() -> UIStackView {
+        let blockEngineStatusView = ADEngineStatusView()
+        let privateEngineStatusView = ADEngineStatusView()
         let stackView = UIStackView()
         stackView.axis = .horizontal
         stackView.distribution = .fillEqually
         stackView.spacing = LayoutContants.stackViewSpacing
-        [ADEngineStatusView(), ADEngineStatusView()].forEach(stackView.addArrangedSubview)
+        blockEngineStatusView.setStatus(.running)
+        privateEngineStatusView.setStatus(.running)
+        blockEngineStatusView.setText(
+            title: "BlockEngine",
+            description: "BlockEngine이 열심히 광고를 차단하고 있어요"
+        )
+        privateEngineStatusView.setText(
+            title: "PrivateEngine",
+            description: "privateEngine이 열심히 광고를 차단하고 있어요"
+        )
+        [
+            blockEngineStatusView,
+            privateEngineStatusView
+        ].forEach(stackView.addArrangedSubview)
         return stackView
     }
 }
