@@ -142,11 +142,11 @@ private extension ADOnboardingMainView {
     
     enum Constants {
         static let next: String = "다음"
-        static let numberOfItems: Int = 3
+        static let numberOfItems: Int = 2
         static let dataSource = [
-            UIImage(named: "Onboarding/Dashboard"),
-            UIImage(named: "Onboarding/Update"),
-            UIImage(named: "Onboarding/Reserve")
+            UIImage(named: "Onboarding/Reserve"),
+            UIImage(named: "Onboarding/Permission"),
+//            UIImage(named: "Onboarding/Dashboard")
         ]
     }
 }
