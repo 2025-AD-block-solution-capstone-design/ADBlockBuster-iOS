@@ -58,19 +58,17 @@ private extension ADOnboardingMainViewModel {
     enum Constants {
         static let pages: [OnboardingPage] = [
             OnboardingPage(
-                title: "대시보드 시작하기",
-                description: "대시보드를 시작해요",
+                title: "엔진 적용하기",
+                description: "설정 - 앱 - Safari에서 엔진을 활성화해요",
                 buttonTitle: "다음"
             ),
             OnboardingPage(
-                title: "업데이트 활용하기",
-                description: "엔진을 최신화해요",
-                buttonTitle: "다음"
-            ),
-            OnboardingPage(
-                title: "예비",
-                description: "예비용 화면입니다",
-                buttonTitle: "홈으로 가기"
+                title: "엔진 설정하기",
+                description: """
+                CSSBlockEngine을 활성화하고,
+                권한 - 모든 웹사이트에서 허용으로 변경해요
+                """,
+                buttonTitle: "시작하기"
             )
         ]
     }

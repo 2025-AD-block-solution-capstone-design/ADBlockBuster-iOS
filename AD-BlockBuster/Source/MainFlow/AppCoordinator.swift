@@ -35,16 +35,37 @@ private extension AppCoordinator {
     }
     
     func showMainFlow() {
+        Task {
+            do {
+                let storage = try BlockRuleStorage()
+                let fetcher = EasyListFetcher()
+                let repository = DefaultEasyListRepository(fetcher: fetcher)
+                let useCase = DefaultEasyListUpdateUseCase(
+                    repository: repository,
+                    storage: storage
+                )
+
+                print("[AppCoordinator] 🔄 Updating EasyList rules...")
+                try await useCase.execute()
+                print("[AppCoordinator] ✅ EasyList rules updated successfully!")
+            } catch {
+                print("[AppCoordinator] ❌ Failed to update EasyList: \(error)")
+            }
+        }
+
         let homeCoordinator = ADHomeCoordinator(
             parentCoordinator: self,
             navigationController: navigationController
         )
-        
+
         addChildCoordinator(homeCoordinator)
         homeCoordinator.start()
     }
     
     func showOnboardingFlow() {
+        let suiteKeyStore = UserDefaults(suiteName: "group.xyz.jiyong.AD-BlockBuster")
+        suiteKeyStore?.set(true, forKey: "user_defaults_suite_enabled")
+        
         let onboardingCoordinator = ADOnboardingCoordinator(
             parentCoordinator: self,
             navigationController: navigationController

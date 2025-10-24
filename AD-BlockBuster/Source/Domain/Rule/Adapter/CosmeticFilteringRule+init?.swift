@@ -15,5 +15,6 @@ extension CosmeticFilteringRule {
 
         self.selector = selector
         self.action = action
+        self.domains = rule.cosmeticDomains
     }
 }

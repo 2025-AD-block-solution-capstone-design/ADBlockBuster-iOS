@@ -10,6 +10,7 @@ import Foundation
 struct CosmeticFilteringRule: Codable {
     var selector: String
     var action: CosmeticActionType
+    var domains: [String]?
 }
 
 extension CosmeticFilteringRule {
@@ -21,6 +22,7 @@ extension CosmeticFilteringRule {
             type: .cosmetic,
             selector: selector,
             cosmeticAction: action,
+            cosmeticDomains: domains,
             trigger: nil,
             networkAction: nil
         )
