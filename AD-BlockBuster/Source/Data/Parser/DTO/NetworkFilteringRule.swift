@@ -16,6 +16,7 @@ extension NetworkFilteringRule {
             type: .network,
             selector: nil,
             cosmeticAction: nil,
+            cosmeticDomains: nil,
             trigger: trigger,
             networkAction: action
         )

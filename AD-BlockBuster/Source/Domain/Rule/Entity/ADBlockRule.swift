@@ -9,6 +9,7 @@ struct ADBlockRule {
     let type: ADBlockRuleType
     var selector: String?
     var cosmeticAction: CosmeticActionType?
+    var cosmeticDomains: [String]?
     var trigger: NetworkFilteringTrigger?
     var networkAction: NetworkFilteringAction?
 }
