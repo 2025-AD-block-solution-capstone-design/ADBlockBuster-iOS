@@ -1,5 +1,5 @@
 //
-//  AppGroupStorage.swift
+//  BlockRuleStorage.swift
 //  AD-BlockBuster
 //
 //  Created by 정지용 on 5/15/25.
@@ -7,11 +7,13 @@
 
 import Foundation
 
-struct AppGroupStorage: BlockRuleStorage {
+struct BlockRuleStorage: AppGroupStorage {
     private let containerURL: URL
     
-    init(appGroupID: String) throws {
-        guard let url = FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: appGroupID) else {
+    init() throws {
+        guard let url = FileManager.default.containerURL(
+            forSecurityApplicationGroupIdentifier: Self.identifier
+        ) else {
             // TODO: 런타임 크래시 제거
             throw NSError(domain: "AppGroupStorage", code: 1, userInfo: nil)
         }

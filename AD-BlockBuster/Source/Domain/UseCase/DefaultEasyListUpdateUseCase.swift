@@ -9,11 +9,11 @@ import Foundation
 
 struct DefaultEasyListUpdateUseCase: EasyListUpdateUseCase {
     let repository: EasyListRepository
-    let storage: BlockRuleStorage
+    let storage: AppGroupStorage
     
     init(
         repository: EasyListRepository,
-        storage: BlockRuleStorage
+        storage: AppGroupStorage
     ) {
         self.repository = repository
         self.storage = storage
